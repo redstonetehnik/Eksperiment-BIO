@@ -2,7 +2,12 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[slovene]{babel}
-\usepackage[margin=3cm]{geometry}
+\usepackage[margin=2.5cm, left=3cm]{geometry}
+\usepackage{etoolbox}
+
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
 
 \begin{document}
 
@@ -10,9 +15,11 @@
 \author{Vladimir Smrkolj\\Lenart Bučar\\Gregor Gajič}
 \date{februar, 2017}
 
+\sffamily
+
 \begin{titlepage}
 \centering
-{\sffamily
+
 
 {\Large{GIMNAZIJA BEŽIGRAD\\[2mm]LJUBLJANA}}
 
@@ -46,8 +53,36 @@ Kandidati: \parbox[t]{3cm}{\@author}
 \makeatletter
 Ljubljana, \@date
 \makeatother
-}
+
 \end{titlepage}
+
+
+\begin{abstract}
+
+\textbf{Teoretična izhodišča:}
+
+\textbf{Metoda:}
+
+\textbf{Rezultati:}
+
+\textbf{Razprava:}
+
+\textbf{Ključne besede:}
+
+\end{abstract}
+
+\tableofcontents
+
+\chapter{UVOD}
+
+\chapter{TEORETIČNI DEL}
+
+\chapter{RAZISKOVALNI DEL}
+
+\chapter{ZAKLJUČEK}
+
+\chapter{PRILOGE}
+
 
 
 
