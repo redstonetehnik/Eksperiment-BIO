@@ -4,7 +4,7 @@
 \usepackage[slovene]{babel}
 \usepackage[margin=2.5cm, left=3cm]{geometry}
 \usepackage{etoolbox}
-\usepackage{latexmk}
+%\usepackage{latexmk}
 
 \makeatletter
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
@@ -59,17 +59,19 @@ Ljubljana, \@date
 
 
 \begin{abstract}
+\begin{description}
 
-\textbf{Teoretična izhodišča:}
+\item[Teoretična izhodišča:]
 
-\textbf{Metoda:}
+\item[Metoda:]
 
-\textbf{Rezultati:}
+\item[Rezultati:]
 
-\textbf{Razprava:}
+\item[Razprava:]
 
-\textbf{Ključne besede:}
+\item[Ključne besede:]
 
+\end{description}
 \end{abstract}
 
 \tableofcontents
