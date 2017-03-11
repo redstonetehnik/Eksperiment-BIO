@@ -4,6 +4,7 @@
 \usepackage[slovene]{babel}
 \usepackage[margin=2.5cm, left=3cm]{geometry}
 \usepackage{etoolbox}
+\usepackage{latexmk}
 
 \makeatletter
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
@@ -77,22 +78,22 @@ Ljubljana, \@date
 
 \section{\textsc{Bakterije}}
 
-\textsc{Bakterije} so enocelični organizmi, ki jih po načinu prehranjevanja razlikujemo na avtotrofe in heterotrofe. \textbf{Avtotrofi} so organizmi, ki kot edini vir ogljika uporabljajo ogljikov dioksid (primer so cianobakterije), \textbf{heterotrofi} pa potrebujejo ogljik v organski obliki.
+Bakterije so enocelični organizmi, ki jih po načinu prehranjevanja razlikujemo na avtotrofe in heterotrofe. \textbf{Avtotrofi} so organizmi, ki kot edini vir ogljika uporabljajo ogljikov dioksid (primer so cianobakterije), \textbf{heterotrofi} pa potrebujejo ogljik v organski obliki.
 
 Bakterije najdemo skoraj povsod: v zemlji, vodi, zraku, tudi na rastlinah, živalih in človeku. Pri živalih in človeku žive bakterije na koži, v nosu, na zunanjih spolovilih in v prebavnem traktu, kjer so celo koristne, ker s svojimi encimi pomagajo pri prebavi, same pa gostitelja oskrbujejo z nekaterimi vitamini. Tako govorimo o normalni mikroflori, ki delno deluje tudi kot zaščita pred boleznimi, ker s škodljivimi mikrobi tekmuje za življenjski prostor in hrano. Če pridejo v organizem škodljive patogene bakterije, jih organizem skuša uničiti s svojimi obrambnimi mehanizmi. Kadar mu to ne uspe, se začno bakterije razmnoževati, nekatere izločajo tudi strupe; človek ali žival zboli in lahko tudi umre.
 
-Tako nevarne kot nenevarne bakterije se lahko prenašajo na fizičnem prenosniku. Fizični prenosnik je lahko vsaka stvar, bakterije pa lahko z njega odstranimo s čiščenjem, dezinfekcijo in sterilizacijo: 
+Tako nevarne kot nenevarne bakterije se lahko prenašajo na fizičnem prenosniku. Fizični prenosnik je lahko vsaka stvar, bakterije pa lahko z njega odstranimo s čiščenjem, dezinfekcijo in sterilizacijo:
 \begin{itemize}
-\item Čiščenje je postopek, pri katerem odstranimo vidno umazanijo, organske ostanke in del bakterij. 
-\item Dezinfekcija ali razkuževanje je postopek, pri katerem uničimo vse vegetativne oblike bakterij. Razkuževanje izvajamo na tri načine, in sicer mehansko (drgnjenje, brisanje), kemično (razkužila) in s fizikalnimi postopki (UV sevanje, segrevanje). 
-\item Sterilizacija je postopek, s katerim uničimo vse vegetativne oblike in spore bakterij ter vse viruse. 
+\item Čiščenje je postopek, pri katerem odstranimo vidno umazanijo, organske ostanke in del bakterij.
+\item Dezinfekcija ali razkuževanje je postopek, pri katerem uničimo vse vegetativne oblike bakterij. Razkuževanje izvajamo na tri načine, in sicer mehansko (drgnjenje, brisanje), kemično (razkužila) in s fizikalnimi postopki (UV sevanje, segrevanje).
+\item Sterilizacija je postopek, s katerim uničimo vse vegetativne oblike in spore bakterij ter vse viruse.
 \end{itemize}
 
-V ameriški raziskavi so ugotovili, da je na vsakem kvadratnem centimetru mobilnega telefona skoraj 4000 mikroorganizmov. Odkrili so tudi, da je na 94,5\,\% mobilnih telefonov vsaj ena vrsta bakterij, mnogo teh pa je odpornih na več antibiotikov. S primerjanjem brisa rok uporabnikov in njihovih mobilnih telefonov so odkrili, da se večina bakterij prenese z rok na mobilne telefone in obratno. V drugi ameriški raziskavi so zapisali, da lahko mobilni telefoni zdravstvenih delavcev služijo kot prenašalci bakterij iz enega bolnika na drugega. Predlagali so, da se prepove uporabo mobilnih telefonov v kliničnih prostorih, kjer je potrebna popolna asepsa (operacijska soba) oziroma je nevarnost prenašanja mikroorganizmov večja. 
+V ameriški raziskavi so ugotovili, da je na vsakem kvadratnem centimetru mobilnega telefona skoraj 4000 mikroorganizmov. Odkrili so tudi, da je na 94,5\,\% mobilnih telefonov vsaj ena vrsta bakterij, mnogo teh pa je odpornih na več antibiotikov. S primerjanjem brisa rok uporabnikov in njihovih mobilnih telefonov so odkrili, da se večina bakterij prenese z rok na mobilne telefone in obratno. V drugi ameriški raziskavi so zapisali, da lahko mobilni telefoni zdravstvenih delavcev služijo kot prenašalci bakterij iz enega bolnika na drugega. Predlagali so, da se prepove uporabo mobilnih telefonov v kliničnih prostorih, kjer je potrebna popolna asepsa (operacijska soba) oziroma je nevarnost prenašanja mikroorganizmov večja.
 
 \section{\textsc{Gojenje mikroorganizmov}}
 
-Gojenje mikroorganizmov je osnova za njihovo proučevanje. Rast mikroorganizmov pomeni rast celic in povečevanje števila celic. Za rast je treba zagotoviti hranila, vir energije in ustrezne fizikalno-kemijske razmere. Gojišča in razmere, v katerih kulturo gojimo, morajo čim bolj posnemati naravno okolje. 
+Gojenje mikroorganizmov je osnova za njihovo proučevanje. Rast mikroorganizmov pomeni rast celic in povečevanje števila celic. Za rast je treba zagotoviti hranila, vir energije in ustrezne fizikalno-kemijske razmere. Gojišča in razmere, v katerih kulturo gojimo, morajo čim bolj posnemati naravno okolje.
 
 \section{\textsc{Gojišča}}
 
@@ -100,13 +101,13 @@ Gojišča so substrati za gojenje mikroorganizmov v laboratorijskih razmerah. Go
 
 Gojišča so vodne raztopine snovi, ki jih določen mikroorganizem potrebuje za rast. Glede na sestavo jih delimo na kompleksna in definirana. \textbf{Kompleksna gojišča} so tista, pri katerih ne poznamo njihove natančne kemijske sestave. \textbf{Definirana gojišča} vsebujejo točno določene koncentracije čistih kemikalij.
 
-Vsako gojišče lahko pripravimo kot tekoče, trdno ali poltrdno glede na količino dodanih snovi, ki povzročajo strjevanje gojišča. Običajno je to agar, redkeje želatina ali silikagel. 
+Vsako gojišče lahko pripravimo kot tekoče, trdno ali poltrdno glede na količino dodanih snovi, ki povzročajo strjevanje gojišča. Običajno je to agar, redkeje želatina ali silikagel.
 
-Glede na vrsto in namen gojišča, jih delimo na: 
+Glede na vrsto in namen gojišča, jih delimo na:
 \begin{description}
 \item[Osnovna gojišča] so bogata kompleksna gojišča, na katerih raste večina heterotrofnih bakterij.
 \item[Obogatena gojišča] dobimo, če osnovnim gojiščem primešamo različne dodatke, ki so vir aminokislin, vitaminov, purinov, pirimidinov in drugih neznanih rastnih dejavnikov. Uporabljamo jih za izolacijo in gojenje prehransko zahtevnejših bakterij. Najbolj splošno obogateno gojišče je krvni agar, ki ga pripravimo tako, da v osnovno gojišče dodamo 5\,\% krvi. Če kri dodamo v vroče gojišče, dobimo čokoladni agar. Gojišča lahko obogatimo tudi s krvnim serumom, jajci, posnetim mlekom.
-\item[Diferencialna gojišča] omogočajo rast večini bakterij, vendar se na njih kolonije različnih bakterijskih vrst razlikujejo med seboj. 
+\item[Diferencialna gojišča] omogočajo rast večini bakterij, vendar se na njih kolonije različnih bakterijskih vrst razlikujejo med seboj.
 \item[Selektivna gojišča] so sestavljena tako, da omogočajo rast samo določeni skupini bakterij (negativna selekcija). To dosežemo z dodajanjem snovi, ki zavirajo rast večine drugih mikroorganizmov (antibiotiki, barvila, NaCl).
 \item[Bogatitvena gojišča] enako kot selektivna omogočajo rast samo določenim mikroorganizmom, ker vsebujejo specifične vire ogljika ali drugih potrebnih elementov, ki omogočajo rast samo zaželenim mikrobom (pozitivna selekcija).
 \item[Produkcijska gojišča] se uporabljajo v industriji.
