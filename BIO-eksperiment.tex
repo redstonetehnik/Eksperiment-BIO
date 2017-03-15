@@ -5,17 +5,25 @@
 \usepackage[margin=2.5cm, left=3cm]{geometry}
 \usepackage{etoolbox}
 \usepackage{fancyhdr}
+\usepackage{titlesec}
 %\usepackage{latexmk}
 
 \makeatletter
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
 \makeatother
+%this is to remove pagebreak after chapter
+
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{}{0pt}{\Huge}
+\titlespacing*{\chapter}
+  {0pt}{10pt}{40pt}
+%this is to remove Chapter #X that appeared before each chapter
 
 \begin{document}
 
-\title{Kako umazane so stvari v resnici}
+\title{KAKO UMAZANE SO STVARI V RESNICI}
 \author{Vladimir Smrkolj\\Lenart Bučar\\Gregor Gajič}
-\date{februar, 2017}
+\date{marec, 2017}
 
 \sffamily
 
@@ -44,7 +52,7 @@ BIOLOGIJA
 \vfill
 
 
-\parbox{4cm}{Mentor:}
+\parbox{4cm}{Mentor: Petra Starbek}
 \hfill
 \makeatletter
 Kandidati: \parbox[t]{3cm}{\@author}
@@ -80,7 +88,13 @@ Ljubljana, \@date
 
 \tableofcontents
 
-\chapter{\textsc{Uvod}}
+\chapter{UVOD}
+
+\section{\textsc{Namen Naloge}}
+
+Namen te naloge je spoznati ali so stvari, za katere mislimo, da so umazane, res ``umazane'' in ali se med predmeti, ki jih uporabljamo vsak dan, skrivajo predmeti, ki izgledajo čisti, vendar so v resnici zelo ``umazani''.
+
+\chapter{TEORETIČNI DEL}
 
 \section{\textsc{Bakterije}}
 
@@ -136,9 +150,45 @@ Mikroorganizme lahko nacepljamo na trdna ali v tekoča gojišča. Za nacepljanje
 
 Posamezne kolonije dobimo, če kulturo ali preiskovani material nacepimo tako, da ga ``razredčujemo'' na površini trdnega gojišča v petrijevki. Kulturo nanesemo na majhno površino ob robu gojišča. Vsako nadaljnjo serijo potez začnemo s sterilno cepilno zanko.
 
-\chapter{TEORETIČNI DEL}
+\section{\textsc{Delovna Hipoteza}}
+
+Površina mobilnega telefona je najmanj čista od površin osmih predmetov, s katerih bomo vzeli brise (površina straniščne deske, mobilni telefon, tipke na računalniški tipkovnici, tipke na žepnem računalu, kljuka na vratih, bankovec, kovanec, tipkovnica na bankomatu).
+
+\chapter{MATERIAL}
+
+\begin{itemize}
+  \item Sterilne petrijevke z agarjem za gojenje bakterij
+  \item 250g agarja za gojenje bakterij
+  \item Prenosne sterilne vatirane palčke za odvzem brisa
+  \item Površine, s katerih bomo odvzeli brise:
+  \begin{itemize}
+    \item Površina straniščne deske
+    \item Mobilni telefon
+    \item Tipke na računalniški tipkovnici
+    \item Tipke na žepnem računalu
+    \item Kljuka na vratih
+    \item Bankovec
+    \item Kovanec
+    \item Tipkovnica na bankomatu
+  \end{itemize}
+  \item Sterilno fiziološko raztopino
+  \item Inkubator oz. prostor z nadzorovano temperaturo zraka
+  \item Cepilne zanke (eze)
+  \item Laboratorijski gorilnik
+  \item Razkužilo
+  \item Zaščitne rokavice
+
+\end{itemize}
 
 \chapter{RAZISKOVALNI DEL}
+
+Za uspešno izvedbo poskusa potrebujemo sterilno opremo in sterilni agar. Agar bomo sterilizirali po naslednjem postopku: Najprej bomo v 500\,ml erlenmajerico vložili 250\,g agarja. Okoli vratu erlenmajerice bomo z aluminijasto folijo naredili zaviti vrat, ki bo gledal navzdol, tako da bo preprečil vstop kondenzirane vode v erlenmajerico. V lonec na zvišan pritisk bomo nalili okoli 2-3\,cm vode. Na podstavek v posodi na zvišan pritisk bomo postavili erlenmajerico, tako da se le-ta ne bo dotikala vode. V loncu na zvišan pritisk bomo sterilizirali agar vsaj 45 minut pri 121$^\circ$\,C oziroma pri 1,05\,bara. Po 45 minutah bomo lonec odstranili z grelca in pokrili pokrov s čisto in mokro krpo, zato da bomo preprečili vstop delcev med ohlajanjem. Ko se bo pritisk znotraj lonca izenačil z zunanjim pritiskom, bomo odprli pokrov in prelili agar v sterilne petrijevke. V vsako petrijevko bomo nalili 25-30\,ml tekočega agarja. Petrijevke bomo pokrili in počakali, da se sloj agarja strdi, nato so petrijevke pripravljene na uporabo.
+
+Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino in s tako pripravljenimi vatiranimi palčkami odvzeli bris izbrane površine. Ko bomo zbrali brise vseh 8 površin, bomo razmazali kužnine po delu hranilnega agarja na predpripravljeni petrijevki. S cepilno zanko bomo naredili nekaj pravokotnih potez čez prvi premaz, nato bomo nadaljevali v isti smeri cepljenja, ne da bi se dotikali prvega premaza. Petrijevke bomo za tem označili in jih inkubirali dva dni pri temperaturi 37$^\circ$\,C. Po dveh dneh inkubiranja bomo prešteli kolonije bakterij v vsaki petrijevki in si zapisali rezultate ter opažanja. S pomočjo rezultatov bomo primerjali čistočo površin oz. predmetov, s katerih smo odvzeli bris.
+
+\chapter{REZULTATI}
+
+\chapter{DISKUSIJA}
 
 \chapter{ZAKLJUČEK}
 
