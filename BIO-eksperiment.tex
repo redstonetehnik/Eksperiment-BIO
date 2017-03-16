@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper]{report}
+\documentclass[12pt, a4paper, oneside]{report}
 
 \usepackage[utf8]{inputenc}
 \usepackage[slovene]{babel}
@@ -7,6 +7,7 @@
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \usepackage{array}
+%\usepackage{tablefootnote}
 %\usepackage{latexmk}
 
 \makeatletter
@@ -72,9 +73,8 @@ Ljubljana, \@date
 
 \end{titlepage}
 
-\lhead{Vladimir Smrkolj\\Lenart Bučar\\Gregor Gajič}
-\chead{Kako umazane so stvari v resnici}
-\rhead{\parbox{2cm}{\today}\thepage}
+
+\tableofcontents
 
 \begin{abstract}
 \begin{description}
@@ -92,9 +92,12 @@ Ljubljana, \@date
 \end{description}
 \end{abstract}
 
-\tableofcontents
 
-\pagebreak
+\pagestyle{fancy}
+\lhead{Gimnazija Bežigrad}
+\chead{}
+\rhead{Poročilo poskusa}
+
 
 \chapter{UVOD}
 
@@ -102,7 +105,7 @@ Ljubljana, \@date
 
 Namen te naloge je spoznati ali so stvari, za katere mislimo, da so umazane, res ``umazane'' in ali se med predmeti, ki jih uporabljamo vsak dan, skrivajo predmeti, ki izgledajo čisti, vendar so v resnici zelo ``umazani''.
 
-\chapter{TEORETIČNI DEL}
+\chapter{TEORETIČNI DEL -- UMAZANOST}
 
 \section{\textsc{Bakterije}}
 
@@ -158,12 +161,34 @@ Mikroorganizme lahko nacepljamo na trdna ali v tekoča gojišča. Za nacepljanje
 
 Posamezne kolonije dobimo, če kulturo ali preiskovani material nacepimo tako, da ga ``razredčujemo'' na površini trdnega gojišča v petrijevki. Kulturo nanesemo na majhno površino ob robu gojišča. Vsako nadaljnjo serijo potez začnemo s sterilno cepilno zanko.
 
+\section{Umazanost}
+
+
+
 \section{\textsc{Delovna Hipoteza}}
 
 Površina mobilnega telefona je najmanj čista od površin osmih predmetov, s katerih bomo vzeli brise (površina straniščne deske, mobilni telefon, tipke na računalniški tipkovnici, tipke na žepnem računalu, kljuka na vratih, bankovec, kovanec, tipkovnica na bankomatu).
 
-\chapter{MATERIAL}
+\chapter{RAZISKOVALNI DEL}
 
+\section{Namen in cilji raziskovanja}
+Namen te naloge je spoznati ali so stvari, za katere mislimo, da so »umazane«, torej tudi onesnažene z velikim številom mikroorganizmov, res »umazane« in ali se med predmeti, ki jih uporabljamo vsak dan, skrivajo predmeti, ki izgledajo čisti, vendar so v resnici zelo »umazani«.
+
+\section{Raziskovalne hipoteze, Raziskovalna vprašanja}
+
+Površina mobilnega telefona je najmanj čista od površin osmih predmetov, s katerih bomo vzeli brise (površina straniščne deske, mobilni telefon, tipke na računalniški tipkovnici, tipke na žepnem računalu, kljuka na vratih, bankovec, kovanec, tipkovnica na bankomatu).
+
+\section{Raziskovalna metodologija}
+
+\subsection{Metode in tehnike zbiranja podatkov}
+
+Za uspešno izvedbo poskusa potrebujemo sterilno opremo in sterilni agar. Agar bomo sterilizirali po naslednjem postopku: Najprej bomo v 500\,ml erlenmajerico vložili 250\,g agarja. Okoli vratu erlenmajerice bomo z aluminijasto folijo naredili zaviti vrat, ki bo gledal navzdol, tako da bo preprečil vstop kondenzirane vode v erlenmajerico. V lonec na zvišan pritisk bomo nalili okoli 2-3\,cm vode. Na podstavek v posodi na zvišan pritisk bomo postavili erlenmajerico, tako da se le-ta ne bo dotikala vode. V loncu na zvišan pritisk bomo sterilizirali agar vsaj 45 minut pri 121$^\circ$\,C oziroma pri 1,05\,bara. Po 45 minutah bomo lonec odstranili z grelca in pokrili pokrov s čisto in mokro krpo, zato da bomo preprečili vstop delcev med ohlajanjem. Ko se bo pritisk znotraj lonca izenačil z zunanjim pritiskom, bomo odprli pokrov in prelili agar v sterilne petrijevke. V vsako petrijevko bomo nalili 25-30\,ml tekočega agarja. Petrijevke bomo pokrili in počakali, da se sloj agarja strdi, nato so petrijevke pripravljene na uporabo.
+
+Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino in s tako pripravljenimi vatiranimi palčkami odvzeli bris izbrane površine. Ko bomo zbrali brise vseh 8 površin, bomo razmazali kužnine po delu hranilnega agarja na predpripravljeni petrijevki. S cepilno zanko bomo naredili nekaj pravokotnih potez čez prvi premaz, nato bomo nadaljevali v isti smeri cepljenja, ne da bi se dotikali prvega premaza. Petrijevke bomo za tem označili in jih inkubirali dva dni pri temperaturi 37$^\circ$\,C. Po dveh dneh inkubiranja bomo prešteli kolonije bakterij v vsaki petrijevki in si zapisali rezultate ter opažanja. S pomočjo rezultatov bomo primerjali čistočo površin oz. predmetov, s katerih smo odvzeli bris.
+
+\subsection{Opis istrumentarija}
+
+Za uspešno izvedbo tega poskusa potrebujemo:
 \begin{itemize}
   \item Sterilne petrijevke z agarjem za gojenje bakterij
   \item 250g agarja za gojenje bakterij
@@ -188,18 +213,16 @@ Površina mobilnega telefona je najmanj čista od površin osmih predmetov, s ka
 
 \end{itemize}
 
-\chapter{RAZISKOVALNI DEL}
+\subsection{Opis vzorca}
 
-Za uspešno izvedbo poskusa potrebujemo sterilno opremo in sterilni agar. Agar bomo sterilizirali po naslednjem postopku: Najprej bomo v 500\,ml erlenmajerico vložili 250\,g agarja. Okoli vratu erlenmajerice bomo z aluminijasto folijo naredili zaviti vrat, ki bo gledal navzdol, tako da bo preprečil vstop kondenzirane vode v erlenmajerico. V lonec na zvišan pritisk bomo nalili okoli 2-3\,cm vode. Na podstavek v posodi na zvišan pritisk bomo postavili erlenmajerico, tako da se le-ta ne bo dotikala vode. V loncu na zvišan pritisk bomo sterilizirali agar vsaj 45 minut pri 121$^\circ$\,C oziroma pri 1,05\,bara. Po 45 minutah bomo lonec odstranili z grelca in pokrili pokrov s čisto in mokro krpo, zato da bomo preprečili vstop delcev med ohlajanjem. Ko se bo pritisk znotraj lonca izenačil z zunanjim pritiskom, bomo odprli pokrov in prelili agar v sterilne petrijevke. V vsako petrijevko bomo nalili 25-30\,ml tekočega agarja. Petrijevke bomo pokrili in počakali, da se sloj agarja strdi, nato so petrijevke pripravljene na uporabo.
+\subsection{Opis obdelave podatkov}
 
-Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino in s tako pripravljenimi vatiranimi palčkami odvzeli bris izbrane površine. Ko bomo zbrali brise vseh 8 površin, bomo razmazali kužnine po delu hranilnega agarja na predpripravljeni petrijevki. S cepilno zanko bomo naredili nekaj pravokotnih potez čez prvi premaz, nato bomo nadaljevali v isti smeri cepljenja, ne da bi se dotikali prvega premaza. Petrijevke bomo za tem označili in jih inkubirali dva dni pri temperaturi 37$^\circ$\,C. Po dveh dneh inkubiranja bomo prešteli kolonije bakterij v vsaki petrijevki in si zapisali rezultate ter opažanja. S pomočjo rezultatov bomo primerjali čistočo površin oz. predmetov, s katerih smo odvzeli bris.
+\section{REZULTATI}
 
-\chapter{REZULTATI}
-
-\section{\textsc{Število kolonij po dnevih}}
+V sledečih tabelah so prikazani opisi kolonij za vsako gojišče posebej.
 
 \begin{table}%[p]
-  \caption{Št. kolonij v odvisnosti od datuma}
+  \textbf{\caption{Št. kolonij v odvisnosti od datuma}}
   \begin{tabular}{||l||r|r|r|r|r|rHHHHHHHH|}
     \hline \hline
     Datum & 9.\,2.\,2017 & 10.\,2.\,2017 & 10.\,2.\,2017 & 11.\,2.\,2017 & 12.\,2.\,2017 & 13.\,2.\,2017 & 14.\,2.\,2017 & 15.\,2.\,2017 & 16.\,2.\,2017 & 17.\,2.\,2017 & 18.\,2.\,2017 & 19.\,2.\,2017 & 20.\,2.\,2017 & 21.\,2.\,2017 \\ \hline
@@ -213,6 +236,7 @@ Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino 
     KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline
     KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
   \end{tabular}
+  \vspace{0.3cm}
   \begin{tabular}{|HHHHHHHr|r|r|r|r|rHH|}
     \hline \hline
     Datum & 9.\,2.\,2017 & 10.\,2.\,2017 & 10.\,2.\,2017 & 11.\,2.\,2017 & 12.\,2.\,2017 & 13.\,2.\,2017 & 14.\,2.\,2017 & 15.\,2.\,2017 & 16.\,2.\,2017 & 17.\,2.\,2017 & 18.\,2.\,2017 & 19.\,2.\,2017 & 20.\,2.\,2017 & 21.\,2.\,2017 \\ \hline
@@ -226,6 +250,7 @@ Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino 
     KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline
     KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
   \end{tabular}
+  \vspace{0.3cm}
   \begin{tabular}{|HHHHHHHHHHHHHr|r||}
     \hline \hline
     Datum & 9.\,2.\,2017 & 10.\,2.\,2017 & 10.\,2.\,2017 & 11.\,2.\,2017 & 12.\,2.\,2017 & 13.\,2.\,2017 & 14.\,2.\,2017 & 15.\,2.\,2017 & 16.\,2.\,2017 & 17.\,2.\,2017 & 18.\,2.\,2017 & 19.\,2.\,2017 & 20.\,2.\,2017 & 21.\,2.\,2017 \\ \hline
@@ -241,10 +266,9 @@ Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino 
   \end{tabular}
 \end{table}
 
-\section{Kovanec}
 
 \begin{table}
-  \caption{Kovanec}
+  \textbf{\caption{Kovanec}}
   \begin{tabular}{||l|c||}
     \hline \hline
     Velikost & \textless\,1\,mm \\ \hline
@@ -260,10 +284,8 @@ Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino 
   \end{tabular}
 \end{table}
 
-\section{Straniščna Deska}
-
 \begin{table}
-  \caption{Straniščna Deska}
+  \textbf{\caption{Straniščna Deska}}
   \begin{tabular}{||l|c||}
     \hline \hline
     Velikost & 5\,mm \\ \hline
@@ -279,10 +301,8 @@ Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino 
   \end{tabular}
 \end{table}
 
-\section{Žepno Računalo}
-
 \begin{table}
-  \caption{Žepno Računalo}
+  \textbf{\caption{Žepno Računalo}}
   \begin{tabular}{||l|c||}
     \hline \hline
     Velikost & 5\,mm \\ \hline
@@ -298,10 +318,8 @@ Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino 
   \end{tabular}
 \end{table}
 
-\section{Tipke na bankomatu}
-
 \begin{table}
-  \caption{Tipke na bankomatu}
+  \textbf{\caption{Tipke na bankomatu}}
   \begin{tabular}{||l|c||}
     \hline \hline
     Velikost & 2\,mm \\ \hline
@@ -317,10 +335,9 @@ Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino 
   \end{tabular}
 \end{table}
 
-\section{Računalniška tipkovnica}
 
 \begin{table}
-  \caption{Računalniška tipkovnica}
+  \textbf{\caption{Računalniška tipkovnica}}
   \begin{tabular}{||l|c||}
     \hline \hline
     Velikost & 8\,mm \\ \hline
@@ -333,6 +350,57 @@ Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino 
     Rob & naguban \\ \hline
     Vzdignjenost & ploske \\ \hline
     Optične lastnosti & motna/prosojna \\ \hline \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \textbf{\caption{Bankovec}}
+  \begin{tabular}{||l|c||}
+    \hline \hline
+    Velikost & 10\,mm \\ \hline
+    Velikost (opisno) & velika \\ \hline
+    Barva & mlečna \\ \hline
+    Površina & mat \\ \hline
+    Tekstura & gladka \\ \hline
+    Št. kolonij & 1 \\ \hline
+    Oblika & okrogle \\ \hline
+    Rob & gladek \\ \hline
+    Vzdignjenost & ploske \\ \hline
+    Optične lastnosti & prosojna \\ \hline \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \textbf{\caption{Kljuka na vratih}}
+  \begin{tabular}{||l|c||}
+    \hline \hline
+    Velikost & 8\,mm \\ \hline
+    Velikost (opisno) & velika \\ \hline
+    Barva & mlečna \\ \hline
+    Površina & mat \\ \hline
+    Tekstura & suha \\ \hline
+    Št. kolonij & 1 \\ \hline
+    Oblika & okrogle \\ \hline
+    Rob & naguban \\ \hline
+    Vzdignjenost & ploske \\ \hline
+    Optične lastnosti & motna \\ \hline \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \textbf{\caption{Mobilni telefon}}
+  \begin{tabular}{||l|c||}
+    \hline \hline
+    Velikost & 2\,mm \\ \hline
+    Velikost (opisno) & majhna \\ \hline
+    Barva & kremasto-oranžna \\ \hline
+    Površina & mat \\ \hline
+    Tekstura & hrapava \\ \hline
+    Št. kolonij & 1 \\ \hline
+    Oblika & okrogle \\ \hline
+    Rob & naguban \\ \hline
+    Vzdignjenost & dvignjene \\ \hline
+    Optične lastnosti & prosojna \\ \hline \hline
   \end{tabular}
 \end{table}
 
