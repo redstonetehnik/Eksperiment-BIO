@@ -9,12 +9,13 @@
 \usepackage{array}
 %\usepackage{apacite}
 \usepackage{url}
-\usepackage{biblatex-apa}
+\usepackage[backend=biber, style=apa]{biblatex}
 %\usepackage{tablefootnote}
 %\usepackage{latexmk}
 
 \DeclareLanguageMapping{slovene}{slovene-apa}
 \bibliography{Eksperiment}
+\nocite{*}
 
 \makeatletter
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
