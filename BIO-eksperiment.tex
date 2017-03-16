@@ -7,8 +7,14 @@
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \usepackage{array}
+%\usepackage{apacite}
+\usepackage{url}
+\usepackage{biblatex-apa}
 %\usepackage{tablefootnote}
 %\usepackage{latexmk}
+
+\DeclareLanguageMapping{slovene}{slovene-apa}
+\bibliography{Eksperiment}
 
 \makeatletter
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
@@ -162,12 +168,6 @@ Mikroorganizme lahko nacepljamo na trdna ali v tekoča gojišča. Za nacepljanje
 Posamezne kolonije dobimo, če kulturo ali preiskovani material nacepimo tako, da ga ``razredčujemo'' na površini trdnega gojišča v petrijevki. Kulturo nanesemo na majhno površino ob robu gojišča. Vsako nadaljnjo serijo potez začnemo s sterilno cepilno zanko.
 
 \section{Umazanost}
-
-
-
-\section{\textsc{Delovna Hipoteza}}
-
-Površina mobilnega telefona je najmanj čista od površin osmih predmetov, s katerih bomo vzeli brise (površina straniščne deske, mobilni telefon, tipke na računalniški tipkovnici, tipke na žepnem računalu, kljuka na vratih, bankovec, kovanec, tipkovnica na bankomatu).
 
 \chapter{RAZISKOVALNI DEL}
 
@@ -410,7 +410,13 @@ V sledečih tabelah so prikazani opisi kolonij za vsako gojišče posebej.
 
 \chapter{PRILOGE}
 
-
+\chapter{VIRI, LITERATURA}
+%\begingroup
+%\renewcommand{\section}[2]{}%
+%\renewcommand{\chapter}[2]{}% for other classes
+%\bibliographystyle{apacite}
+\printbibliography
+%\nocite{*}
 
 
 
