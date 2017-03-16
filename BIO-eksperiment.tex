@@ -1,7 +1,7 @@
 \documentclass[12pt, a4paper, oneside]{report}
 
 \usepackage[utf8]{inputenc}
-\usepackage[slovene]{babel}
+\usepackage[english, slovene]{babel}
 \usepackage[margin=2.5cm, left=3cm]{geometry}
 \usepackage{etoolbox}
 \usepackage{fancyhdr}
@@ -29,7 +29,7 @@
 %this is to remove Chapter #X that appeared before each chapter
 
 \newcolumntype{H}{>{\lrbox0}c<{\endlrbox}@{}}
-%the H colums will now be hidden
+%the H columns will now be hidden
 
 \newcommand{\comment}[2]{#2}
 
@@ -81,7 +81,8 @@ Ljubljana, \@date
 \end{titlepage}
 
 
-\tableofcontents
+
+\selectlanguage{slovene}
 
 \begin{abstract}
 \begin{description}
@@ -99,6 +100,27 @@ Ljubljana, \@date
 \end{description}
 \end{abstract}
 
+\selectlanguage{english}
+
+\begin{abstract}
+\begin{description}
+
+\item[Theoretical background:]
+
+\item[Methods:]
+
+\item[Results:]
+
+\item[Discussion:]
+
+\item[Kezwords:]
+
+\end{description}
+\end{abstract}
+
+\selectlanguage{slovene}
+
+\tableofcontents
 
 \pagestyle{fancy}
 \lhead{Gimnazija Bežigrad}
@@ -223,46 +245,54 @@ Za uspešno izvedbo tega poskusa potrebujemo:
 V sledečih tabelah so prikazani opisi kolonij za vsako gojišče posebej.
 
 \begin{table}%[p]
-  \textbf{\caption{Št. kolonij v odvisnosti od datuma}}
-  \begin{tabular}{||l||r|r|r|r|r|rHHHHHHHH|}
-    \hline \hline
-    Datum & 9.\,2.\,2017 & 10.\,2.\,2017 & 10.\,2.\,2017 & 11.\,2.\,2017 & 12.\,2.\,2017 & 13.\,2.\,2017 & 14.\,2.\,2017 & 15.\,2.\,2017 & 16.\,2.\,2017 & 17.\,2.\,2017 & 18.\,2.\,2017 & 19.\,2.\,2017 & 20.\,2.\,2017 & 21.\,2.\,2017 \\ \hline
-    Ura & 17.51	& 6.48	& 18.10	& 17.34	& 17.24	& 17.57	& 20.14	& 17.23	& 18.10	& 18.22	& 18.02	& 16.56	& 21.29	& 19.05 \\ \hline \hline
-    SD \footnote{Straniščna deska} & 18 & 19 & 17 & 23 & 23 & 24 & 25 & 25 & 28 & 38 & 39 & 38 & 37 & 37 \\ \hline
-    MT \footnote{Mobilni telefon} & 32 & 35 & 35 & 35 & 34 & 39 & 43 & 42 & 41 & 45 & 48 & 47 & 47 & 48 \\ \hline
-    RT \footnote{Računalniška tipkovnica} & 4 & 4 & 4 & 4 & 5 & 5 & 5 & 6 & 6 & 7 & 7 & 7 & 9 & 8 \\ \hline
-    ŽR \footnote{Žepno računalo} & 6 & 6 & 6 & 6 & 8 & 8 & 9 & 9 & 10 & 10 & 11 & 11 & 10 & 10 \\ \hline
-    KV \footnote{Kljuka na vratih} & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\ \hline
-    BA \footnote{Bankovec} & 1 & 1 & 2 & 2 & 2 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\ \hline
-    KO \footnote{Kovanec} & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
-  \end{tabular}
-  \vspace{0.3cm}
-  \begin{tabular}{|HHHHHHHr|r|r|r|r|rHH|}
-    \hline \hline
-    Datum & 9.\,2.\,2017 & 10.\,2.\,2017 & 10.\,2.\,2017 & 11.\,2.\,2017 & 12.\,2.\,2017 & 13.\,2.\,2017 & 14.\,2.\,2017 & 15.\,2.\,2017 & 16.\,2.\,2017 & 17.\,2.\,2017 & 18.\,2.\,2017 & 19.\,2.\,2017 & 20.\,2.\,2017 & 21.\,2.\,2017 \\ \hline
-    Ura & 17.51	& 6.48	& 18.10	& 17.34	& 17.24	& 17.57	& 20.14	& 17.23	& 18.10	& 18.22	& 18.02	& 16.56	& 21.29	& 19.05 \\ \hline \hline
-    SD & 18 & 19 & 17 & 23 & 23 & 24 & 25 & 25 & 28 & 38 & 39 & 38 & 37 & 37 \\ \hline
-    MT & 32 & 35 & 35 & 35 & 34 & 39 & 43 & 42 & 41 & 45 & 48 & 47 & 47 & 48 \\ \hline
-    RT & 4 & 4 & 4 & 4 & 5 & 5 & 5 & 6 & 6 & 7 & 7 & 7 & 9 & 8 \\ \hline
-    ŽR & 6 & 6 & 6 & 6 & 8 & 8 & 9 & 9 & 10 & 10 & 11 & 11 & 10 & 10 \\ \hline
-    KV & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\ \hline
-    BA & 1 & 1 & 2 & 2 & 2 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\ \hline
-    KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
-  \end{tabular}
-  \begin{tabular}{|HHHHHHHHHHHHHr|r||}
-    \hline \hline
-    Datum & 9.\,2.\,2017 & 10.\,2.\,2017 & 10.\,2.\,2017 & 11.\,2.\,2017 & 12.\,2.\,2017 & 13.\,2.\,2017 & 14.\,2.\,2017 & 15.\,2.\,2017 & 16.\,2.\,2017 & 17.\,2.\,2017 & 18.\,2.\,2017 & 19.\,2.\,2017 & 20.\,2.\,2017 & 21.\,2.\,2017 \\ \hline
-    Ura & 17.51	& 6.48	& 18.10	& 17.34	& 17.24	& 17.57	& 20.14	& 17.23	& 18.10	& 18.22	& 18.02	& 16.56	& 21.29	& 19.05 \\ \hline \hline
-    SD & 18 & 19 & 17 & 23 & 23 & 24 & 25 & 25 & 28 & 38 & 39 & 38 & 37 & 37 \\ \hline
-    MT & 32 & 35 & 35 & 35 & 34 & 39 & 43 & 42 & 41 & 45 & 48 & 47 & 47 & 48 \\ \hline
-    RT & 4 & 4 & 4 & 4 & 5 & 5 & 5 & 6 & 6 & 7 & 7 & 7 & 9 & 8 \\ \hline
-    ŽR & 6 & 6 & 6 & 6 & 8 & 8 & 9 & 9 & 10 & 10 & 11 & 11 & 10 & 10 \\ \hline
-    KV & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\ \hline
-    BA & 1 & 1 & 2 & 2 & 2 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\ \hline
-    KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
-  \end{tabular}
+  \begin{minipage}{\textwidth}
+    \renewcommand\thempfootnote{\arabic{mpfootnote}}
+    \textbf{\caption{Št. kolonij v odvisnosti od datuma}}
+    \begin{tabular}{||l||r|r|r|r|r|rHHHHHHHH|}
+      \hline \hline
+      Datum & 9.\,2.\,2017 & 10.\,2.\,2017 & 10.\,2.\,2017 & 11.\,2.\,2017 & 12.\,2.\,2017 & 13.\,2.\,2017 & 14.\,2.\,2017 & 15.\,2.\,2017 & 16.\,2.\,2017 & 17.\,2.\,2017 & 18.\,2.\,2017 & 19.\,2.\,2017 & 20.\,2.\,2017 & 21.\,2.\,2017 \\ \hline
+      Ura & 17.51	& 6.48	& 18.10	& 17.34	& 17.24	& 17.57	& 20.14	& 17.23	& 18.10	& 18.22	& 18.02	& 16.56	& 21.29	& 19.05 \\ \hline \hline
+      SD \footnote{Straniščna deska} & 18 & 19 & 17 & 23 & 23 & 24 & 25 & 25 & 28 & 38 & 39 & 38 & 37 & 37 \\ \hline
+      MT \footnote{Mobilni telefon} & 32 & 35 & 35 & 35 & 34 & 39 & 43 & 42 & 41 & 45 & 48 & 47 & 47 & 48 \\ \hline
+      RT \footnote{Računalniška tipkovnica} & 4 & 4 & 4 & 4 & 5 & 5 & 5 & 6 & 6 & 7 & 7 & 7 & 9 & 8 \\ \hline
+      ŽR \footnote{Žepno računalo} & 6 & 6 & 6 & 6 & 8 & 8 & 9 & 9 & 10 & 10 & 11 & 11 & 10 & 10 \\ \hline
+      KV \footnote{Kljuka na vratih} & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\ \hline
+      BA \footnote{Bankovec} & 1 & 1 & 2 & 2 & 2 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\ \hline
+      KO \footnote{Kovanec} & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
+    \end{tabular}
+
+    \vspace{0.3cm}
+
+    \begin{tabular}{|HHHHHHHr|r|r|r|r|rHH|}
+      \hline \hline
+      Datum & 9.\,2.\,2017 & 10.\,2.\,2017 & 10.\,2.\,2017 & 11.\,2.\,2017 & 12.\,2.\,2017 & 13.\,2.\,2017 & 14.\,2.\,2017 & 15.\,2.\,2017 & 16.\,2.\,2017 & 17.\,2.\,2017 & 18.\,2.\,2017 & 19.\,2.\,2017 & 20.\,2.\,2017 & 21.\,2.\,2017 \\ \hline
+      Ura & 17.51	& 6.48	& 18.10	& 17.34	& 17.24	& 17.57	& 20.14	& 17.23	& 18.10	& 18.22	& 18.02	& 16.56	& 21.29	& 19.05 \\ \hline \hline
+      SD & 18 & 19 & 17 & 23 & 23 & 24 & 25 & 25 & 28 & 38 & 39 & 38 & 37 & 37 \\ \hline
+      MT & 32 & 35 & 35 & 35 & 34 & 39 & 43 & 42 & 41 & 45 & 48 & 47 & 47 & 48 \\ \hline
+      RT & 4 & 4 & 4 & 4 & 5 & 5 & 5 & 6 & 6 & 7 & 7 & 7 & 9 & 8 \\ \hline
+      ŽR & 6 & 6 & 6 & 6 & 8 & 8 & 9 & 9 & 10 & 10 & 11 & 11 & 10 & 10 \\ \hline
+      KV & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\ \hline
+      BA & 1 & 1 & 2 & 2 & 2 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\ \hline
+      KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
+    \end{tabular}
+
+    \vspace{0.3cm}
+
+    \begin{tabular}{|HHHHHHHHHHHHHr|r||}
+      \hline \hline
+      Datum & 9.\,2.\,2017 & 10.\,2.\,2017 & 10.\,2.\,2017 & 11.\,2.\,2017 & 12.\,2.\,2017 & 13.\,2.\,2017 & 14.\,2.\,2017 & 15.\,2.\,2017 & 16.\,2.\,2017 & 17.\,2.\,2017 & 18.\,2.\,2017 & 19.\,2.\,2017 & 20.\,2.\,2017 & 21.\,2.\,2017 \\ \hline
+      Ura & 17.51	& 6.48	& 18.10	& 17.34	& 17.24	& 17.57	& 20.14	& 17.23	& 18.10	& 18.22	& 18.02	& 16.56	& 21.29	& 19.05 \\ \hline \hline
+      SD & 18 & 19 & 17 & 23 & 23 & 24 & 25 & 25 & 28 & 38 & 39 & 38 & 37 & 37 \\ \hline
+      MT & 32 & 35 & 35 & 35 & 34 & 39 & 43 & 42 & 41 & 45 & 48 & 47 & 47 & 48 \\ \hline
+      RT & 4 & 4 & 4 & 4 & 5 & 5 & 5 & 6 & 6 & 7 & 7 & 7 & 9 & 8 \\ \hline
+      ŽR & 6 & 6 & 6 & 6 & 8 & 8 & 9 & 9 & 10 & 10 & 11 & 11 & 10 & 10 \\ \hline
+      KV & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\ \hline
+      BA & 1 & 1 & 2 & 2 & 2 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\ \hline
+      KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
+    \end{tabular}
+  \end{minipage}
 \end{table}
-\clearpage
+
 
 \begin{table}
   \textbf{\caption{Kovanec}}
@@ -401,9 +431,11 @@ V sledečih tabelah so prikazani opisi kolonij za vsako gojišče posebej.
   \end{tabular}
 \end{table}
 
+\clearpage
+
 \section{Razprava}
 
-
+Pri tem poskusu smo ugotovili, da je največ bakterij na mobilnem telefonu (uporabili smo preklopni telefon, ``na tipke'' in ne novejšega, ``na dotik''), saj se je po štirinajstih dneh inkubacije na njem razvilo kar 48 kolonij bakterij. Za primerjavo, na drugem mestu je bila straniščna deska z 37 kolonijami, zadnje mesto pa sta si delila kovanec ter kljuka na vratih z le dvema kolonijama. Zelo malo (le 3) kolonije pa so se razvile na vzorcu z bankomata. Najverjetnejši razlog za to je, da so vse tri površine kovinske, kovine pa so bakteriostatične (zavirajo rast bakterij). [WIP]
 
 \chapter{ZAKLJUČEK}
 
