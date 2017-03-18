@@ -1,6 +1,7 @@
 \documentclass[12pt, a4paper, oneside]{report}
 
 \usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
 \usepackage[english, slovene]{babel}
 \usepackage[margin=2.5cm, left=3cm]{geometry}
 \usepackage{etoolbox}
@@ -9,13 +10,15 @@
 \usepackage{array}
 %\usepackage{apacite}
 \usepackage{url}
-\usepackage[backend=biber, style=apa]{biblatex}
+%\usepackage[backend=biber, style=apa]{biblatex}
 %\usepackage{tablefootnote}
 %\usepackage{latexmk}
+%\usepackage{csquotes}
+%\usepackage{cm-super}
 
-\DeclareLanguageMapping{slovene}{slovene-apa}
-\bibliography{Eksperiment}
-\nocite{*}
+%\DeclareLanguageMapping{slovene}{slovene-apa}
+%\bibliography{Eksperiment}
+%\nocite{*}
 
 \makeatletter
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
@@ -31,7 +34,7 @@
 \newcolumntype{H}{>{\lrbox0}c<{\endlrbox}@{}}
 %the H columns will now be hidden
 
-\newcommand{\comment}[2]{#2}
+%\newcommand{\comment}[2]{#2}
 
 \begin{document}
 
@@ -130,13 +133,13 @@ Ljubljana, \@date
 
 \chapter{UVOD}
 
-\section{\textsc{Namen Naloge}}
+\section{Namen Naloge}
 
-Namen te naloge je spoznati ali so stvari, za katere mislimo, da so umazane, res ``umazane'' in ali se med predmeti, ki jih uporabljamo vsak dan, skrivajo predmeti, ki izgledajo čisti, vendar so v resnici zelo ``umazani''.
+Namen te naloge je spoznati ali so stvari, za katere mislimo, da so »umazane«, torej tudi onesnažene z velikim številom mikroorganizmov, res ``umazane'' in ali se med predmeti, ki jih uporabljamo vsak dan, skrivajo predmeti, ki izgledajo čisti, vendar so v resnici zelo ``umazani''.
 
-\chapter{TEORETIČNI DEL -- UMAZANOST}
+\chapter{TEORETIČNI DEL}
 
-\section{\textsc{Bakterije}}
+\section{Bakterije}
 
 Bakterije so enocelični organizmi, ki jih po načinu prehranjevanja razlikujemo na avtotrofe in heterotrofe. \textbf{Avtotrofi} so organizmi, ki kot edini vir ogljika uporabljajo ogljikov dioksid (primer so cianobakterije), \textbf{heterotrofi} pa potrebujejo ogljik v organski obliki.
 
@@ -151,11 +154,11 @@ Tako nevarne kot nenevarne bakterije se lahko prenašajo na fizičnem prenosniku
 
 V ameriški raziskavi so ugotovili, da je na vsakem kvadratnem centimetru mobilnega telefona skoraj 4000 mikroorganizmov. Odkrili so tudi, da je na 94,5\,\% mobilnih telefonov vsaj ena vrsta bakterij, mnogo teh pa je odpornih na več antibiotikov. S primerjanjem brisa rok uporabnikov in njihovih mobilnih telefonov so odkrili, da se večina bakterij prenese z rok na mobilne telefone in obratno. V drugi ameriški raziskavi so zapisali, da lahko mobilni telefoni zdravstvenih delavcev služijo kot prenašalci bakterij iz enega bolnika na drugega. Predlagali so, da se prepove uporabo mobilnih telefonov v kliničnih prostorih, kjer je potrebna popolna asepsa (operacijska soba) oziroma je nevarnost prenašanja mikroorganizmov večja.
 
-\section{\textsc{Gojenje mikroorganizmov}}
+\section{Gojenje mikroorganizmov}
 
 Gojenje mikroorganizmov je osnova za njihovo proučevanje. Rast mikroorganizmov pomeni rast celic in povečevanje števila celic. Za rast je treba zagotoviti hranila, vir energije in ustrezne fizikalno-kemijske razmere. Gojišča in razmere, v katerih kulturo gojimo, morajo čim bolj posnemati naravno okolje.
 
-\section{\textsc{Gojišča}}
+\section{Gojišča}
 
 Gojišča so substrati za gojenje mikroorganizmov v laboratorijskih razmerah. Gojišča, ki jih uporabljamo v mikrobiologiji so številna in raznolika, saj jih prilagajamo potrebam mikroorganizmov in načinu uporabe (izolacija, vzdrževanje, namnoževanje in karakterizacija kulture).
 
@@ -174,28 +177,25 @@ Glede na vrsto in namen gojišča, jih delimo na:
 \item[Gojišča za ugotavljanje lastnosti bakterij] so sestavljena tako, da lahko ugotavljamo dejavnost različnih encimov, sposobnost bakterije, da razgrajuje različne substrate in podobno.
 \end{description}
 
-\subsection{\textsc{Agar}}
+\subsection{Agar}
 
 \textbf{Agar} je polisaharid iz galaktoze in galakturonske kisline, ki ga pridobivajo iz določenih vrst rdečih morskih alg. V večino poltrdih gojišč je dodano 1,5\,\% agarja. V mrzli vodi nabrekne, pri 100oC pa se popolnoma raztopi in s tem preide v koloidno stanje sol. Pri ohlajanju pod temperaturo 40oC preide ponovno v stanje gel. Želatina, ki se včasih uporablja namesto agarja, preide v stanje sol že pri 37oC, to pa je za mnoge bakterije najugodnejša temperatura za rast. Le redke morske bakterije hidrolizirajo agar. Pri gojenju teh uporabljajo silikagel gojišča. Prvi agar so je pojavil leta 1658 na Japonskem, odkril ga je Mino Tarōzaemon, ki je opazil, da se je juha, narejena iz morskih alg, strdila v gel, ko se je ponoči temperatura juhe znižala. Agar se je v biologiji prvič uporabil leta 1882. Uporabil ga je nemški mikrobiolog Walther Hesse v laboratoriju Roberta Kocha.
 
-\section{\textsc{Mikrobna Kultura}}
+\section{Mikrobna Kultura}
 
 Mikrobna kultura so mikroorganizmi, ki porastejo v gojišču ali na njem. Mikrobna kultura je lahko mešana ali čista. V \textbf{čisti kulturi} je samo ena vrsta mikroorganizmov in zato so lastnosti kulture lastnosti te vrste mikroorganizma. V \textbf{mešani kulturi} je več kot ena vrsta mikroorganizmov.
 
-\section{\textsc{Nacepljanje Mikroorganizmov Na/V Gojišča}}
+\section{Nacepljanje Mikroorganizmov Na/V Gojišča}
 
 Mikroorganizme lahko nacepljamo na trdna ali v tekoča gojišča. Za nacepljanje ali inokulacijo uporabljamo cepilno zanko (eza), lahko pa tudi vatenko ali pipeto. Če nacepljamo mikroorganizme na trdna gojišča, morajo biti kolonije po inkubaciji dovolj narazen, da lahko zrastejo do za vrsto značilne velikosti in da razvijejo druge značilnosti. Tak način cepljenja imenujemo redko cepljenje ali \textbf{cepljenje do posameznih kolonij}.
 
-\section{\textsc{Redčenje Kulture Do Posameznih Kolonij}}
+\section{Redčenje Kulture Do Posameznih Kolonij}
 
 Posamezne kolonije dobimo, če kulturo ali preiskovani material nacepimo tako, da ga ``razredčujemo'' na površini trdnega gojišča v petrijevki. Kulturo nanesemo na majhno površino ob robu gojišča. Vsako nadaljnjo serijo potez začnemo s sterilno cepilno zanko.
 
 \section{Umazanost}
 
 \chapter{RAZISKOVALNI DEL}
-
-\section{Namen in cilji raziskovanja}
-Namen te naloge je spoznati ali so stvari, za katere mislimo, da so »umazane«, torej tudi onesnažene z velikim številom mikroorganizmov, res »umazane« in ali se med predmeti, ki jih uporabljamo vsak dan, skrivajo predmeti, ki izgledajo čisti, vendar so v resnici zelo »umazani«.
 
 \section{Raziskovalne hipoteze, Raziskovalna vprašanja}
 
@@ -205,9 +205,9 @@ Površina mobilnega telefona je najmanj čista od površin osmih predmetov, s ka
 
 \subsection{Metode in tehnike zbiranja podatkov}
 
-Za uspešno izvedbo poskusa potrebujemo sterilno opremo in sterilni agar. Agar bomo sterilizirali po naslednjem postopku: Najprej bomo v 500\,ml erlenmajerico vložili 250\,g agarja. Okoli vratu erlenmajerice bomo z aluminijasto folijo naredili zaviti vrat, ki bo gledal navzdol, tako da bo preprečil vstop kondenzirane vode v erlenmajerico. V lonec na zvišan pritisk bomo nalili okoli 2-3\,cm vode. Na podstavek v posodi na zvišan pritisk bomo postavili erlenmajerico, tako da se le-ta ne bo dotikala vode. V loncu na zvišan pritisk bomo sterilizirali agar vsaj 45 minut pri 121$^\circ$\,C oziroma pri 1,05\,bara. Po 45 minutah bomo lonec odstranili z grelca in pokrili pokrov s čisto in mokro krpo, zato da bomo preprečili vstop delcev med ohlajanjem. Ko se bo pritisk znotraj lonca izenačil z zunanjim pritiskom, bomo odprli pokrov in prelili agar v sterilne petrijevke. V vsako petrijevko bomo nalili 25-30\,ml tekočega agarja. Petrijevke bomo pokrili in počakali, da se sloj agarja strdi, nato so petrijevke pripravljene na uporabo.
+Za uspešno izvedbo poskusa potrebujemo sterilno opremo in sterilni agar, ki bosta preprečila vpliv bakterij in ostalih delcev, ki bi v petrijevke zašli neodvisno od vzorca, na rezultate poskusa. Opremo bomo pred in tekom poskusa z ustreznimi postopki sterilizirali, agar pa bo v naprej pripravljen v sterilnem okolju in kupljen že znotraj namenskih petrijevk.
 
-Potem bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino in s tako pripravljenimi vatiranimi palčkami odvzeli bris izbrane površine.  Ko bomo zbrali brise vseh 8  površin, bomo razmazali kužnine po delu hranilnega agarja na predpripravljeni petrijevki. S cepilno zanko bomo naredili nekaj pravokotnih potez čez prvi premaz, nato bomo nadaljevali v isti smeri cepljenja, ne da bi se dotikali  prvega premaza . Petrijevke bomo za tem označili in jih inkubirali dva dni  pri temperaturi37$\circ$\,C. Po dveh dneh inkubiranja bomo prešteli kolonije bakterij v vsaki petrijevki in si zapisali rezultate ter opažanja. S pomočjo rezultatov bomo primerjali čistočo površin oz. predmetov, s katerih smo odvzeli bris.
+Vzorce bomo pridobili tako, da bomo sterilne vatirane palčke namočili v sterilno fiziološko raztopino in z njimi odvzeli bris izbrane površine. Ko bomo zbrali brise vseh 8 površin, bomo razmazali kužnine po delu hranilnega agarja na predpripravljeni petrijevki. S cepilno zanko bomo naredili nekaj pravokotnih potez čez prvi premaz, nato bomo nadaljevali v isti smeri cepljenja, ne da bi se dotikali prvega premaza. Petrijevke bomo za tem označili in jih inkubirali dva dni pri temperaturi 37$\circ$\,C. Po dveh dneh inkubiranja bomo prešteli kolonije bakterij v vsaki petrijevki in si zapisali rezultate ter opažanja, s pomočjo katerih bomo primerjali čistočo površin oz. predmetov, s katerih smo odvzeli bris.
 
 \subsection{Opis istrumentarija}
 
@@ -242,7 +242,7 @@ Za uspešno izvedbo tega poskusa potrebujemo:
 
 \section{REZULTATI}
 
-V sledečih tabelah so prikazani opisi kolonij za vsako gojišče posebej.
+Z opazovanjem kolonij in zapisovanjem števila le-teh smo dobili naslednje rezultate, ki smo jih uredili v naslednje tabele in diagrame.
 
 \begin{table}%[p]
   \begin{minipage}{\textwidth}
@@ -258,7 +258,8 @@ V sledečih tabelah so prikazani opisi kolonij za vsako gojišče posebej.
       ŽR \footnote{Žepno računalo} & 6 & 6 & 6 & 6 & 8 & 8 & 9 & 9 & 10 & 10 & 11 & 11 & 10 & 10 \\ \hline
       KV \footnote{Kljuka na vratih} & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\ \hline
       BA \footnote{Bankovec} & 1 & 1 & 2 & 2 & 2 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\ \hline
-      KO \footnote{Kovanec} & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
+      KO \footnote{Kovanec} & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline
+      TB \footnote{Tipkovnica bankomata} & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ \hline \hline
     \end{tabular}
 
     \vspace{0.3cm}
@@ -273,7 +274,8 @@ V sledečih tabelah so prikazani opisi kolonij za vsako gojišče posebej.
       ŽR & 6 & 6 & 6 & 6 & 8 & 8 & 9 & 9 & 10 & 10 & 11 & 11 & 10 & 10 \\ \hline
       KV & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\ \hline
       BA & 1 & 1 & 2 & 2 & 2 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\ \hline
-      KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
+      KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline
+      TB & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ \hline \hline
     \end{tabular}
 
     \vspace{0.3cm}
@@ -288,7 +290,8 @@ V sledečih tabelah so prikazani opisi kolonij za vsako gojišče posebej.
       ŽR & 6 & 6 & 6 & 6 & 8 & 8 & 9 & 9 & 10 & 10 & 11 & 11 & 10 & 10 \\ \hline
       KV & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\ \hline
       BA & 1 & 1 & 2 & 2 & 2 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\ \hline
-      KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline \hline
+      KO & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 \\ \hline
+      TB  & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ \hline \hline
     \end{tabular}
   \end{minipage}
 \end{table}
@@ -435,7 +438,7 @@ V sledečih tabelah so prikazani opisi kolonij za vsako gojišče posebej.
 
 \section{Razprava}
 
-Pri tem poskusu smo ugotovili, da je največ bakterij v petrijevki, kamor smo nanesli vzorec z mobilnega telefona (uporabili smo preklopni telefon, ``na tipke'' in ne novejšega, ``na dotik''), saj se je po štirinajstih dneh inkubacije pri njem razvilo kar 48 kolonij bakterij. Iz tega sklepamo, da je na mobilnem telefonu največ bakterij.  Za primerjavo, na drugem mestu je bil vzorec s straniščne deske z 37 kolonijami, zadnje mesto pa sta si delila vzorca kovanca ter kljuke na vratih z le dvema kolonijama. Zelo malo (le 3) kolonije pa so se razvile na vzorcu z bankomata. Najverjetnejši razlog za to je, da so vse tri površine kovinske, kovine pa so bakteriostatične (zavirajo rast bakterij). [WIP]
+Pri tem poskusu smo ugotovili, da je največ bakterij v petrijevki, kamor smo nanesli vzorec z mobilnega telefona (uporabili smo preklopni telefon, ``na tipke'' in ne novejšega, ``na dotik''), saj se je po štirinajstih dneh inkubacije pri njem razvilo kar 48 kolonij bakterij. Iz tega sklepamo, da je na mobilnem telefonu največ bakterij. Za primerjavo, na drugem mestu je bil vzorec s straniščne deske s 37 kolonijami, najmanj kolonij pa se je razvilo iz vzorca z tipkovnice bankomata -- le ena, kljub temu, da se bankomata dotakne zelo veliko ljudi, čistijo pa ga prav nikoli. Zelo malo kolonij pa je bilo tudi na vzorcih kovanca in kljuke na vratih – le dve. Najverjetnejši razlog za to je, da so vse tri površine kovinske, kovine pa so bakteriostatične (zavirajo rast bakterij). [WIP]
 
 \chapter{ZAKLJUČEK}
 
@@ -446,7 +449,7 @@ Pri tem poskusu smo ugotovili, da je največ bakterij v petrijevki, kamor smo na
 %\renewcommand{\section}[2]{}%
 %\renewcommand{\chapter}[2]{}% for other classes
 %\bibliographystyle{apacite}
-\printbibliography
+%\printbibliography
 %\nocite{*}
 
 
